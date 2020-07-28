@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.56.100:3306/mall_pms
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: mall-product
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  main:
+    allow-bean-definition-overriding: true
+
+dubbo:
+  scan:
+    base-packages: com.wizhi.mall.product.service.impl
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://127.0.0.1
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 7000
+
+
