@@ -3,7 +3,7 @@ package com.wizhi.mall.product;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.wizhi.mall.product.entity.BrandEntity;
 import com.wizhi.mall.product.service.BrandService;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
